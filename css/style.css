@@ -197,13 +197,10 @@ article {
 }
 .studio ul{
 	font-weight: regular;
-	list-style-image: url(../img/marker.png);
 }
 .studio ul li {
 	display: block;
-	font-weight: regular;
+	font-weight: 400;
 	text-transform: none;
 	line-height: 2;
-	list-style-image: url(../img/marker.png);
-	
 }
