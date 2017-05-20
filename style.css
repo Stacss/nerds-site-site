@@ -166,12 +166,18 @@ section {
 article {
 	display: inline-block;
 }
-.wrapper {
+.wraper {
 	border-top: 3px solid #eeeeee;
 	border-bottom: 3px solid #eeeeee;
 }
+.wraper:after {
+	content: "";
+	display: table;
+	clear: both;
+}
 .studio {
 	width: 680px;
+	float: left;
 }
 .studio h2 {
 	display: block;
@@ -197,13 +203,13 @@ article {
 }
 .studio ul{
 	font-weight: regular;
-	list-style-image: url(../img/marker.png);
+	list-style-image: url(../img/marker.png);/* не работает */
 }
 .studio ul li {
 	display: block;
 	font-weight: regular;
 	text-transform: none;
 	line-height: 2;
-	list-style-image: url(../img/marker.png);
+	list-style-image: url(../img/marker.png); /* не работает */
 	
 }

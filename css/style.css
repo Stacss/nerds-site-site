@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 	}
 body {
-	min-width: 1440px;
+	width: 100%;
 }
 ul {
 	float: left;
@@ -55,10 +55,11 @@ li {
 	line-height: 1.875;
 	font-weight: 500;
 }
+.bg--grey {
+	background-color: #eeeeee;
+}
 header {
 	padding-top: 50px;
-	padding-left: 120px;
-	background-color: #eeeeee;
 }
 header img {
 	margin-right: 200px;
@@ -80,11 +81,12 @@ section:after {
 	display: table;
 	clear: both;
 }
-
+.container_all {
+	width: 1300px;
+	margin: 0 auto;
+}
 .wrapper_content {
 	min-height: 430px;
-	padding-left: 120px;
-	background-color: #eeeeee;
 }
 .wrapper_content h2 {
 	display: block;
@@ -104,7 +106,7 @@ section:after {
 .wrapper_content div {
 	width: 380px;
 }
-.wrapper_content input {
+.wrapper_content button {
 	display: block;
 	margin-top: 45px;
 	margin-bottom: 80px;
@@ -120,10 +122,10 @@ section:after {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-.wrapper_content input:hover {
+.wrapper_content button:hover {
 	background-color: #e74246;
 }
-.wrapper_content input:active {
+.wrapper_content button:active {
 	background-color: #d7373b;
 }
 .container {
@@ -145,7 +147,7 @@ section:after {
 	color: #283136;
 	font-weight: regular;	
 }
-.container input {
+.container button {
 	width: 160px;
 	height: 50px;
 	margin-top: 40px;
@@ -159,10 +161,6 @@ section:after {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-section {
-	padding-left: 120px;
-	padding-right: 120px;
-}
 article {
 	display: inline-block;
 }
@@ -172,6 +170,7 @@ article {
 }
 .studio {
 	width: 680px;
+	float: left;
 }
 .studio h2 {
 	display: block;
@@ -203,4 +202,9 @@ article {
 	font-weight: 400;
 	text-transform: none;
 	line-height: 2;
+	list-style-type: url (../img/marker.png)
+}
+.market {
+	width: 780px;
+	float: right;
 }
