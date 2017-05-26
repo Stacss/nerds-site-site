@@ -2,42 +2,65 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/sprites.css">	
+	<link rel="stylesheet" href="css/style.css">	
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 	<title>каталог</title>
 </head>
 <body>
-	<header class="container_all bg--grey">
-		<h1>
-			<a href=""><img src="img/logo.png" alt="логотип"></a>
-		</h1>
-		<nav>
-			<ul>
-				<a href="">
-					<li>студия
-				</a>
-				<a href="">
-					<li>клиенты
-				</a>
-				<a href="">
-					<li>магазин
-				</a>
-				<a href="">
-					<li>контакты
-				</a>
-			</ul>
-			<a href="#basket"><img src="img/cart-icon.png" alt="basket" class="basket">корзина</a>
-		</nav>
+	<header class="bg--grey">
+		<div class="container_all">
+			<h1>
+				<a href=""><img src="img/logo.png" alt="логотип"></a>
+			</h1>
+			<nav>
+				<ul>
+					<a href="">
+						<li>студия
+					</a>
+					<a href="">
+						<li>клиенты
+					</a>
+					<a href="">
+						<li>магазин
+					</a>
+					<a href="">
+						<li>контакты
+					</a>
+				</ul>
+				<button class="basket"><img src="img/cart-icon.png" alt="">корзина</button>
+			</nav>
+		</div>
 	</header>
 	<main>
-		<section class="container_all">
-			<h2>Магазин готовых шаблонов</h2>
+		<section class="bg--grey">
+			<div class="container_all pad">
+				<h2 class="market_h">Магазин готовых шаблонов</h2>
+			</div>
 		</section>
-		<section class="container_all">
+		<section class="container_all pad">
+			<div class="setting">
+				<div class="price">
+					<h3>стоимость:</h3>
+				</div>
+				<div class="radio">
+					<h4>сетка:</h4>
+					<input type="radio" name="Адаптивная" id="adap"><p><label for="adap">Адаптивная</label></p>
+					<input type="radio" name="Фиксированная" id="fixed"><p><label for="fixed">Фиксированная</label></p>
+					<input type="radio" name="Резиновая" id="flex"><p><label for="flex">Резиновая</label></p>
+				</div>
+				<div class="checkbox">
+					<h4>особенности:</h4>
+					<input type="checkbox" name="Слайдер" id="slider"><p><label for="slider">Слайдер</label></p>
+					<input type="checkbox" name="Блок преимуществ" id="block"><p><label for="block">Блок преимуществ</label></p>
+					<input type="checkbox" name="Новости" id="news"><p><label for="news">Новости</label></p>
+					<input type="checkbox" name="Галерея" id="gallery"><p><label for="gallery">Галерея</label></p>
+					<input type="checkbox" name="Корзина" id="basket"><p><label for="basket">Корзина</label></p>
+				</div>
+				<button type="button">показать</button>
+			</div>
 			<div class="market">
 				<div class="navigation">
-					<h3>сортировать</h3>
+					<h3>сортировать:</h3>
 					<a href="">по цене</a>
 					<a href="">по типу</a>
 					<a href="">по названию</a>
@@ -89,40 +112,28 @@
 					<button>следующая</button>
 				</div>
 			</div>
-			<div class="setting">
-				<div></div>
-				<div class="radio">
-					<h3>сетка:</h3>
-					<input type="radio" name="Адаптивная" id="">Адаптивная
-					<input type="radio" name="Фиксированная" id="">Фиксированная
-					<input type="radio" name="Резиновая" id="">Резиновая
-				</div>
-				<div class="checkbox">
-					<h3>особенности</h3>
-					<input type="checkbox" name="Слайдер" id="">Слайдер
-					<input type="checkbox" name="Блок преимуществ" id="">Блок преимуществ
-					<input type="checkbox" name="Новости" id="">Новости
-					<input type="checkbox" name="Галерея" id="">Галерея
-					<input type="checkbox" name="Корзина" id="">Корзина
-				</div>
-				<button type="button"></button>
-			</div>
+			
 		</section>		
-		<section>
-			<map name="">
-				<area class="map">
-					<h5></h5>
-					<p></p>
-					<button></button>
-				</area>
-			</map>
+		<section class="pad">
+			<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+				<div class="container_all">
+					<div class="map_box">
+						<h5>nerds design studio</h5>
+						<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+						<a href="tel:+781227575">тел. +7(812)27575</a>
+						<button>напишите нам</button>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>	
-	<footer class="container_all">
-		<div class="social"><img src="img/sprites.png" alt=""></div>
-		<div class="social"><img src="img/sprites.png" alt=""></div>
-		<div class="social"><img src="img/sprites.png" alt=""></div>
-		<div class="slogan">
+	<footer class="container_all mar--b">
+		<div class="wrapper_soc mar--b">
+			<div class="social vk-icon"></div>
+			<div class="social fb-icon"></div>
+			<div class="social insta-icon"></div>
+		</div>
+		<div class="slogan mar--b">
 			<h5>Давайте дружить, это выгодно!</h5>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
