@@ -14,11 +14,11 @@
 				<ul>
 					<li><a href="#1">студия</a>
 					<li><a href="#1">клиенты</a>
-					<li><a href="#1">магазин</a>
+					<li><a href="https://stacss.github.io/nerds-site-site/catalog">магазин</a>
 					<li><a href="#1">контакты</a>
-				</ul>
-				<button class="basket">корзина</button> <!-- Внимание тут не сработал font-width -->
+				</ul>				
 			</nav>
+			<button class="basket">корзина</button> <!-- Внимание тут не сработал font-width -->
 		</div>
 	</header>
 	<main>
@@ -56,19 +56,19 @@
 			</div>
 		</section>
 		<section class="container_all pad brd--b">
-			<article>
+			<article class="box_work">
 				<img src="img/illustration-1.jpg" alt="сайты" width="299">
 				<h3>веб-сайты</h3>
 				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 				<button type="button" value="заказать" class="btn red">заказать</button><!-- подправь кнопку -->
 			</article>
-			<article>
+			<article class="box_work">
 				<img src="img/illustration-2.jpg" alt="приложения" width="299">
 				<h3>приложения</h3>
 				<p>Покорите топ-10 приложений в AppStore и Google Play</p>
 				<button type="button" value="заказать" class="btn green">заказать</button><!-- подправь кнопку -->
 			</article>
-			<article class="end">
+			<article class="box_work">
 				<img src="img/illustration-3.jpg" alt="презентации" width="299">
 				<h3>презентации</h3>
 				<p>Вы даже не подозреваете,  насколько вы изумительны!</p>
@@ -79,7 +79,8 @@
 				<div class="studio">
 					<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
 					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем непокладая рук как роботы.</p>
-					<ul class="list"><strong>Выполняем заказы на разработку:</strong>
+					<strong>Выполняем заказы на разработку:</strong>
+					<ul class="list">
 						<li>Веб-сайтов любой сложности
 						<li>Мобильных приложений для iOS и Android
 						<li>Слайд шоу и видео для корпоротивных клиентов
@@ -129,14 +130,14 @@
 		</section>
 		<section class="pad">
 			<div class="map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+			<script type="text/javascript" charset="utf-8" map.openBalloon(new YMaps.GeoPoint(37.64, 55.76), "Москва") async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
 				<div class="container_all">
-					<!-- <div class="map_box">
+					<div class="map_box">
 						<h5>nerds design studio</h5>
 						<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 						<a href="tel:+781227575">тел. +7(812)27575</a>
 						<button>напишите нам</button>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</section>
