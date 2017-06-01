@@ -9,26 +9,16 @@
 <body>
 	<header class="bg--grey">
 		<div class="container_all">
-			<h1>
-				<a href=""><img src="img/logo.png" alt="логотип"></a>
-			</h1>
+			<a href="../index.html" class="logo"><img src="img/logo.png" alt="логотип"></a>
 			<nav>
 				<ul>
-					<a href="">
-						<li>студия
-					</a>
-					<a href="">
-						<li>клиенты
-					</a>
-					<a href="">
-						<li>магазин
-					</a>
-					<a href="">
-						<li>контакты
-					</a>
-				</ul>
-				<button class="basket"><img src="img/cart-icon.png" alt="">корзина</button>
+					<li><a href="#1">студия</a>
+					<li><a href="#1">клиенты</a>
+					<li><a href="https://stacss.github.io/nerds-site-site/catalog">магазин</a>
+					<li><a href="#1">контакты</a>
+				</ul>				
 			</nav>
+			<button class="basket">корзина</button> <!-- Внимание тут не сработал font-width -->
 		</div>
 	</header>
 	<main>
@@ -38,87 +28,103 @@
 			</div>
 		</section>
 		<section class="container_all pad">
-			<div class="setting">
+			<form class="setting">
 				<div class="price">
 					<h3>стоимость:</h3>
 				</div>
 				<div class="radio">
 					<h4>сетка:</h4>
-					<input type="radio" name="Адаптивная" id="adap"><p><label for="adap">Адаптивная</label></p>
-					<input type="radio" name="Фиксированная" id="fixed"><p><label for="fixed">Фиксированная</label></p>
-					<input type="radio" name="Резиновая" id="flex"><p><label for="flex">Резиновая</label></p>
+					<input type="radio" name="adaptiv" id="adap">
+					<label for="adap">Адаптивная</label>
+					<input type="radio" name="adaptiv" id="fixed">
+					<label for="fixed">Фиксированная</label>
+					<input type="radio" name="adaptiv" id="flex">
+					<label for="flex">Резиновая</label>
 				</div>
 				<div class="checkbox">
 					<h4>особенности:</h4>
-					<input type="checkbox" name="Слайдер" id="slider"><p><label for="slider">Слайдер</label></p>
-					<input type="checkbox" name="Блок преимуществ" id="block"><p><label for="block">Блок преимуществ</label></p>
-					<input type="checkbox" name="Новости" id="news"><p><label for="news">Новости</label></p>
-					<input type="checkbox" name="Галерея" id="gallery"><p><label for="gallery">Галерея</label></p>
-					<input type="checkbox" name="Корзина" id="basket"><p><label for="basket">Корзина</label></p>
+					<input type="checkbox" name="Слайдер" id="slider">
+						<label for="slider">Слайдер</label>
+					<input type="checkbox" name="Блок преимуществ" id="block">
+						<label for="block">Блок преимуществ</label>
+					<input type="checkbox" name="Новости" id="news">
+						<label for="news">Новости</label>
+					<input type="checkbox" name="Галерея" id="gallery">
+						<label for="gallery">Галерея</label>
+					<input type="checkbox" name="Корзина" id="basket">
+						<label for="basket">Корзина</label>
 				</div>
 				<button type="button">показать</button>
-			</div>
+			</form>
 			<div class="market">
 				<div class="navigation">
 					<h3>сортировать:</h3>
-					<a href="">по цене</a>
-					<a href="">по типу</a>
-					<a href="">по названию</a>
-					<a href=""><img src="" alt=""></a>
-					<a href=""><img src="" alt=""></a>
+					<div>
+						<button>по цене</button>
+						<button>по типу</button>
+						<button>по названию</button>
+						<button>1</button>
+						<button>2</button>
+					</div>
 				</div>
-				<article class="lot mar--r">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-sedona.jpg" alt="sedona" width="360">
-					<div class="hidden">
-						<h4>sedona</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
+				<article class="lot">
+					<div class="container_lot">
+						<img src="img/img-sedona.jpg" alt="sedona" width="360">
+						<div class="hidden">
+							<h4>sedona</h4>
+							<p>Информационный сайт  для туристов</p>
+							<button type="button">9900 руб</button>
+						</div>
 					</div>
 				</article>
 				<article class="lot">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-pink.jpg" alt="pink" width="360">
-					<div class="hidden">
-						<h4>pink</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
-					</div>
-				</article>
-				<article class="lot mar--r">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-barbershop.jpg" alt="barber" width="360">
-					<div class="hidden">
-						<h4>barber</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
+					<div class="container_lot">
+						<img src="img/img-pink.jpg" alt="pink" width="360">
+						<div class="hidden">
+							<h4>pink</h4>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<button type="button">9900 руб</button>
+						</div>
 					</div>
 				</article>
 				<article class="lot">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-mishka.jpg" alt="mishka" width="360">
-					<div class="hidden">
-						<h4>mishka</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
-					</div>
-				</article>
-				<article class="lot mar--r">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-aplus.jpg" alt="aplus" width="360">
-					<div class="hidden">
-						<h4>aplus</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
+					<div class="container_lot">
+						<img src="img/img-barbershop.jpg" alt="barber" width="360">
+						<div class="hidden">
+							<h4>barber</h4>
+							<p>Сайт салоны красоты. Для мужчин, да.</p>
+							<button type="button">9900 руб</button>
+						</div>
 					</div>
 				</article>
 				<article class="lot">
-					<img src="img/browser.png" alt="browser" width="360">
-					<img src="img/img-kvast.jpg" alt="kvas" width="360">
-					<div class="hidden">
-						<h4>kvast</h4>
-						<p></p>
-						<button type="button">9900 руб</button>
+					<div class="container_lot">
+						<img src="img/img-mishka.jpg" alt="mishka" width="360">
+						<div class="hidden">
+							<h4>mishka</h4>
+							<p>Интернет-магазин  вязаных игрушек</p>
+							<button type="button">9900 руб</button>
+						</div>
+					</div>
+				</article>
+				<article class="lot">
+					<div class="container_lot">
+						<img src="img/img-aplus.jpg" alt="aplus" width="360">
+						<div class="hidden">
+							<h4>aplus</h4>
+							<p>Лендинг курсов повышения квалификации</p>
+							<button type="button">9900 руб</button>
+						</div>
+					</div>					
+				</article>
+				<article class="lot">
+					<div class="container_lot">
+						<img src="img/img-kvast.jpg" alt="kvas" width="360">
+						<div class="hidden">
+							<h4>kvast</h4>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<button type="button">9900 руб</button>
+						</div>
 					</div>
 				</article>	
 				<div class="scroll">  
@@ -131,7 +137,8 @@
 			
 		</section>		
 		<section class="pad">
-			<div class="map"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+			<div class="map">
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
 				<div class="container_all">
 					<div class="map_box">
 						<h5>nerds design studio</h5>
@@ -142,12 +149,18 @@
 				</div>
 			</div>
 		</section>
-	</main>	
+	</main>
 	<footer class="container_all mar--b">
 		<div class="wrapper_soc mar--b">
-			<div class="social vk-icon"></div>
-			<div class="social fb-icon"></div>
-			<div class="social insta-icon"></div>
+			<div class="social vk-icon">
+				<a href="https://vk.com" target="_blank"></a>
+			</div>
+			<div class="social fb-icon">
+				<a href="https://www.facebook.com" target="_blank"></a>
+			</div>
+			<div class="social insta-icon">
+				<a href="https://www.instagram.com" target="_blank"></a>
+			</div>
 		</div>
 		<div class="slogan mar--b">
 			<h5>Давайте дружить, это выгодно!</h5>
