@@ -560,6 +560,7 @@ section:after {
 	margin: 0 auto;
 }
 .sliders {
+	position: relative;
 	min-height: 430px;
 }
 .sliders h2 {
@@ -600,7 +601,7 @@ section:after {
 .sliders button:active {
 	background-color: #d7373b;
 }
-.clider_select {
+.clider_select > input{
 	position: absolute;
 	left: 50%;
 	bottom: 80px;
