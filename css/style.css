@@ -1234,6 +1234,7 @@ form input {
 	position: relative;
 	top: 40px;
 	overflow: hidden;
+	background-color: #fff;
 }
 .lot .container_lot > img {
 	-webkit-transition: all 0.3s ease-out;
