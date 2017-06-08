@@ -824,9 +824,14 @@ section:after {
 .pad_foot {
 	padding: 70px 0 80px 0;
 }
-
+.pad_head_catalog {
+	padding: 74px 0 106px 0;
+}
 .padding-bottom {
 	padding: 15px 0 0 0;
+}
+.pad_market {
+	padding: 60px 0 80px 0;
 }
 .map {
 	position: relative;
@@ -1082,6 +1087,45 @@ section:after {
 .mar--b {
 	margin-bottom: 80px;
 }
+.modal {
+	position: absolute;
+	display: none;
+	width: 960px;
+	height: 590px;
+	padding: 80px 100px;
+	background: white ;
+}
+.modal h2 {
+	display: block;
+	font-size: 45px;
+	line-height: 1;
+	font-weight: 700;
+	margin-bottom: 50px;
+	text-align: left;
+}
+.modal > div {
+	display: inline-block;
+}
+.modal div:nth-child(1) {
+	margin-right: 40px;
+}
+
+.modal h3 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+.mini_textarea {
+	width: 360px;
+	height: 50px;
+}
+.modal.visible {
+	display: block;
+	z-index: 10;
+}
+.off {
+	display: none;
+}
 .market_h {
 	display: block;
 	margin: 0 auto;
@@ -1102,8 +1146,8 @@ section:after {
 	text-align: left;
 }
 .price {
-	width: 250px;
-	height: 150px;
+	width: 260px;
+	height: 208px;
 	box-sizing: border box;
 	border: 1px solid black;
 }
@@ -1216,7 +1260,7 @@ form input {
 	display: none;
 }
 .navigation {
-	height: 80px;
+	height: 76px;
 }
 .navigation h3 {
 	float: left;
@@ -1224,7 +1268,7 @@ form input {
 .navigation > div {
 	float: right;
 }
-.navigation button {
+.navigation > div > button {
 	display: inline-block;
 	margin-right: 25px;
 	text-decoration: none;
