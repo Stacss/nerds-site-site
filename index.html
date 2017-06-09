@@ -13,7 +13,7 @@
 			<nav>
 				<ul>
 					<li>
-						<a href="#1">студия</a>
+						<a href="#1" class="active_page">студия</a>
 					<li>
 						<a href="#1">клиенты</a>
 					<li>
@@ -38,24 +38,29 @@
 				</div>
 				<div class="slider" id="slide2">
 					<div>
-						<h2>Долго, дорого, скурпулезно211.</h2>
-						<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
+						<h2>Любим математику как никто другой</h2>
+						<p>Никакого креатива, только математические формулы  для расчета идеальных пропорций</p>
 						<button type="button" value="узнать больше">узнать больше</button><!-- подправь кнопку -->
 					</div>
-					<img src="" alt="">
+					<img src="img/slide2.png" width="700" alt="">
 				</div>
 				<div class="slider" id="slide3">
 					<div>
-						<h2>Долго, дорого, скурпулезно3.</h2>
-						<p>Математически выверенный дизайн  для вашего сайта или мобильного приложения</p>
+						<h2>Только ночь, только хардкор</h2>
+						<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
 						<button type="button" value="узнать больше">узнать больше</button><!-- подправь кнопку -->
 					</div>
-					<img src="" alt="">
+					<img src="img/slide3.png" width="700" alt="">
 				</div>
 				<div class="clider_select">
-					<input type="radio" name="slide" id="slide1" class="one">
-					<input type="radio" name="slide" id="slide2" class="one">
-					<input type="radio" name="slide" id="slide3" class="one">
+					<input type="radio" name="slide" id="slide10" checked>
+						<label for="slide10"></label>
+					<input type="radio" name="slide" id="slide20">
+						<label for="slide20"></label>
+					<input type="radio" name="slide" id="slide30">
+						<label for="slide30"></label>
+						
+						
 				</div>				
 			</div>
 		</section>
@@ -134,14 +139,31 @@
 		</section>
 		<section class="pad_map">
 			<div class="map">
-			<script type="text/javascript" charset="utf-8" map.openBalloon(new YMaps.GeoPoint(37.64, 55.76), "Москва") async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
 				<div class="container_all">
 					<div class="map_box">
 						<h5>nerds design studio</h5>
 						<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 						<a href="tel:+781227575">тел. +7(812)27575</a>
-						<button>напишите нам</button>
+						<button  class="btn_modal">напишите нам</button>
 					</div>
+					
+						<div class="modal">
+							<h2>Напишите нам</h2>
+							<div class="close"></div>
+							<div>
+								<h3>Ваше имя:</h3>
+								<input type="text" class="mini_textarea" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div>
+								<h3>Ваш e-mail:</h3>
+								<input type="text"  class="mini_textarea" placeholder="Для отправки ответа">
+							</div>
+							<h3>Текст письма:</h3>
+							<textarea class="big_textarea" placeholder="В свободной форме"></textarea>
+							<button type="submit" class="btn_modal btn--long">отправить</button>
+						</div>
+					
 				</div>
 			</div>
 		</section>
@@ -163,5 +185,6 @@
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

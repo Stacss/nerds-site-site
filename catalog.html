@@ -14,7 +14,7 @@
 				<ul>
 					<li><a href="#1">студия</a>
 					<li><a href="#1">клиенты</a>
-					<li><a href="https://stacss.github.io/nerds-site-site/catalog">магазин</a>
+					<li><a href="https://stacss.github.io/nerds-site-site/catalog"  class="active_page">магазин</a>
 					<li><a href="#1">контакты</a>
 				</ul>				
 			</nav>
@@ -23,18 +23,18 @@
 	</header>
 	<main>
 		<section class="bg--grey">
-			<div class="container_all pad">
+			<div class="container_all pad_head_catalog">
 				<h2 class="market_h">Магазин готовых шаблонов</h2>
 			</div>
 		</section>
-		<section class="container_all pad">
+		<section class="container_all pad_market">
 			<form class="setting">
 				<div class="price">
 					<h3>стоимость:</h3>
 				</div>
 				<div class="radio">
 					<h4>сетка:</h4>
-					<input type="radio" name="adaptiv" id="adap">
+					<input type="radio" name="adaptiv" id="adap" checked>
 					<label for="adap">Адаптивная</label>
 					<input type="radio" name="adaptiv" id="fixed">
 					<label for="fixed">Фиксированная</label>
@@ -60,11 +60,11 @@
 				<div class="navigation">
 					<h3>сортировать:</h3>
 					<div>
-						<button>по цене</button>
+						<button class="btn_active">по цене</button>
 						<button>по типу</button>
 						<button>по названию</button>
-						<button>1</button>
-						<button>2</button>
+						<button class="btn_down btn_active"></button>
+						<button class="btn_up"></button>
 					</div>
 				</div>
 				<article class="lot">
@@ -136,7 +136,7 @@
 			</div>
 			
 		</section>		
-		<section class="pad">
+		<section class="pad_map">
 			<div class="map">
 			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9ed2312c40c036fbbef878f5457f4377b45874c42839d3a9cd5196a290306c5a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
 				<div class="container_all">
@@ -144,13 +144,30 @@
 						<h5>nerds design studio</h5>
 						<p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
 						<a href="tel:+781227575">тел. +7(812)27575</a>
-						<button>напишите нам</button>
+						<button  class="btn_modal">напишите нам</button>
 					</div>
+					
+						<div class="modal">
+							<h2>Напишите нам</h2>
+							<div class="close"></div>
+							<div>
+								<h3>Ваше имя:</h3>
+								<input type="text" class="mini_textarea" placeholder="Представьтесь, пожалуйста">
+							</div>
+							<div>
+								<h3>Ваш e-mail:</h3>
+								<input type="text"  class="mini_textarea" placeholder="Для отправки ответа">
+							</div>
+							<h3>Текст письма:</h3>
+							<textarea class="big_textarea" placeholder="В свободной форме"></textarea>
+							<button type="submit" class="btn_modal btn--long">отправить</button>
+						</div>
+					
 				</div>
 			</div>
 		</section>
 	</main>
-	<footer class="container_all mar--b">
+	<footer class="container_all pad_foot mar--b">
 		<div class="wrapper_soc mar--b">
 			<div class="social vk-icon">
 				<a href="https://vk.com" target="_blank"></a>
@@ -167,5 +184,6 @@
 			<p>Скидка 10% для друзей из социальных сетей.</p>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
