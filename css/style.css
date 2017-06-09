@@ -1157,6 +1157,12 @@ section:after {
 	background-image: url(../img/sprites.png);
 	background-position: -140px -139px ;
 }
+.close:hover {
+	background-position: -138px -40px ;
+}
+.close:active {
+	background-position: -140px -91px ;
+}
 .modal h2 , .close {
 	display: inline-block;
 }
@@ -1183,6 +1189,16 @@ section:after {
 	font-size: 16px;
 	font-weight: 400;
 }
+.mini_textarea:hover,
+.big_textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+.mini_textarea:focus,
+.big_textarea:focus {
+	border: 2px solid #000000;
+	color: #505050;
+}
+
 .modal.visible {
 	display: block;
 	z-index: 10;
