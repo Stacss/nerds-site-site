@@ -1510,6 +1510,7 @@ form input {
 }
 .slider {
 	width: 100%;
+	display: none;
 }
 .slider div {
 	float: left;
@@ -1519,6 +1520,19 @@ form input {
 	display: block;
 	float: left;
 }
-#slide2, #slide3 {
-	display: none;
+/* .slider:nth-child(3) {
+	display: block;
+}  */
+.clider_select input:checked + .slider:nth-child(1) {
+	display: block;
 }
+/* 
+.clider_select input:checked {
+	display: block;
+}
+.clider_select input:checked + .slider:nth-child(2) {
+	display: block;
+}
+.clider_select input:checked + .slider:nth-child(2) {
+	display: block;
+}  */
