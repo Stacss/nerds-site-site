@@ -870,7 +870,7 @@ section:after {
 	position: relative;
 	width: 100%;
 	height: 415px;
-	background: url(../img/map.jpg) 0 0 no-repeat;
+	background: url(../img/map.png) 0 0 no-repeat;
 	-webkit-background-size: auto;
 	background-size: 100%;
 }
