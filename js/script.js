@@ -1,3 +1,11 @@
+// Создает метку и добавляет ее на карту
+var placemark = new YMaps.Placemark(new YMaps.GeoPoint(37.64, 55.76));
+placemark.name = "Имя метки";
+placemark.description = "Описание метки";
+map.addOverlay(placemark);
+
+// Открывает балун
+placemark.openBalloon();
 var btn = document.querySelector(".btn_modal");
 var modal = document.querySelector(".modal");
 var off = document.querySelector(".close");
