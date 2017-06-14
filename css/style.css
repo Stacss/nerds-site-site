@@ -450,7 +450,6 @@ template {
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
-	outline: 1px solid red ;
 	}
 body {
 	width: 100%;
@@ -1187,6 +1186,21 @@ section:after {
 	color: #a1a1a1;
 	font-size: 16px;
 	font-weight: 400;
+}
+.close:hover {
+	background-position: -138px -40px ;
+}
+.close:active {
+	background-position: -140px -91px ;
+}
+.mini_textarea:hover,
+.big_textarea:hover {
+	border: 2px solid #b4b9bb;
+}
+.mini_textarea:focus,
+.big_textarea:focus {
+	border: 2px solid #000000;
+	color: #505050;
 }
 .modal.visible {
 	display: block;
