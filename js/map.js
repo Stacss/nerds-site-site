@@ -25,4 +25,3 @@ ymaps.ready(function () {
         .add(myPlacemark)
         .add(myPlacemarkWithContent);
 });
-consol.log ("hi i yandex map")
