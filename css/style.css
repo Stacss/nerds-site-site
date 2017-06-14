@@ -667,7 +667,7 @@ section:after {
 	color: #283136;
 	font-weight: 400;	
 }
-.box_work:nth-child(3n+3) {
+.box_work:last-child {
 	margin: 0px;
 }
 .btn {
