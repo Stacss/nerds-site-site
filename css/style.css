@@ -1174,7 +1174,9 @@ section:after {
 	height: 115px;
 	margin-bottom: 50px;	
 	vertical-align: top;
-	line-height: 3;
+	line-height: 1.3;
+	text-align: top;
+	padding-top: 20px;
 }
 .mini_textarea,
 .big_textarea {
